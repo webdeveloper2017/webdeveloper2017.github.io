@@ -4,11 +4,32 @@
   <head>
     <title>Life is a dream.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" />
+    
+    <script>
+
+
+
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+
+</script>
+    
   </head>
   <body>
     <div class="container-fluid">
-    <h1>La vida es sueño.</h1>
-      <h2>Y los sueños sueños son.</h2>
+    <h1>Study materials.</h1>
+      <p><a href="https://webdeveloper2017.github.io/aplus.html" target="_blank">A+</a></p>
+      <p><a href="https://webdeveloper2017.github.io/aplus.html" target="_blank">Network+</a></p>
+      <p><a href="https://webdeveloper2017.github.io/aplus.html" target="_blank">Security+</a></p>
     <br>
     <img src="https://webdeveloper2017.github.io/machupicchu.jpg" class="img img-responsive">
     <br>
