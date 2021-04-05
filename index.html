@@ -1,41 +1,98 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+    	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Exams preparation. </title>
+	<meta name="description" content="Information Technology">
+    	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    	<meta name="author" content="GR8">
+    	<link rel="shortcut icon" href="https://webdeveloper2017.github.io/securityplus.ico" />
 
-<html>
-  <head>
-    <title>Life is a dream.</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <script>
+  
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script> 
     
-    <script>
-
-
-
-var message="";
-///////////////////////////////////
-function clickIE() {if (document.all) {(message);return false;}}
-function clickNS(e) {if 
-(document.layers||(document.getElementById&&!document.all)) {
-if (e.which==2||e.which==3) {(message);return false;}}}
-if (document.layers) 
-{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
-
-document.oncontextmenu=new Function("return false")
-
-</script>
-    
-  </head>
-  <body>
-    <div class="container-fluid">
-    <h1>Study materials.</h1>
-      <h2>
-      <p><a href="https://webdeveloper2017.github.io/aplus.html" target="_blank">A+</a>&nbsp;&nbsp;&nbsp;
-      <a href="https://webdeveloper2017.github.io/aplus.html" target="_blank">Network+</a>&nbsp;&nbsp;&nbsp;
-      <a href="https://webdeveloper2017.github.io/aplus.html" target="_blank">Security+</a></p>
-      </h2>
-    
-    <img src="https://webdeveloper2017.github.io/machupicchu.jpg" class="img img-responsive">
+</head>
+<body oncontextmenu="alert('Make it happen!');return false;" onselectstart="return false" ondragstart="return false" >
+<br>
+<div class="container-fluid text-center">
     <br>
-    </div>
-  </body>
+	   <h1>Exams Prep.</h1>
+    <br>
+    <hr>
+	<a href="https://webdeveloper2017.github.io/ccna.html" target="_blank"
+		class="btn btn-lg btn-block btn-primary">
+		<h2>Cisco Certified Network Associate</h2>
+	</a>
+	<br>
+	<br>
+	<a href="https://webdeveloper2017.github.io/networkplus.html" target="_blank"
+		class="btn btn-lg btn-block btn-warning">
+		<h2>CompTIA Network Plus</h2>
+	</a>
+
+
+
+</div>
+
+<br>
+    
+<img	src="https://images.unsplash.com/photo-1617416522060-17c9e6fd4bbe"
+	class="img-fluid d-block mx-auto">
+    
+
+   
+    
+    <!--
+style="background-color: rgb(255, 255, 255);background-image: linear-gradient(-90deg, yellow, lightblue, lightgreen);"
+-->
+    
+<!-- These Javascript links are required for the proper functionality of Bootstrap 4. 
+And they should always be placed at the very end, near to the closing body tag. Exactly where they are right now. -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
     
